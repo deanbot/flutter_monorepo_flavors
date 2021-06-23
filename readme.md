@@ -2,7 +2,7 @@
 
 ## Vanilla - No monorepo management library
 
-See `vanilla` directory.
+See [`vanilla`](./vanilla).
 
 ### Setup 
 
@@ -10,12 +10,15 @@ See `vanilla` directory.
 
 example:
 
-- packages
-    - app_core
-        - pubspec.yaml
-        - lib
-            - app_core.dart
-            - [...]
+```txt
+packages
+└───app_core
+    │   pubspec.yaml
+    │   [...]
+    └───lib
+        │   app_core.dart
+        └───[...]
+```
     
 - `pubspec.lock` should be ignored in shared packages (per https://dart.dev/tools/pub/glossary#library-package).
 - Consuming packages use a relative path instead of version name within `pubspec.yaml`
@@ -41,7 +44,7 @@ dependencies:
     - Run `flutter pub get` in order for each shared package in `packages`.
     - Run `flutter pub get` for each consuming app.
     - Run `flutter pub get` in any package if [immediate dependencies](https://dart.dev/tools/pub/glossary#immediate-dependency) change. 
-        - TODO - does consumer need to run `pub get` if [transitive dependencies]https://dart.dev/tools/pub/glossary#transitive-dependency) change?
+        - TODO - does consumer need to run `pub get` if [transitive dependencies](https://dart.dev/tools/pub/glossary#transitive-dependency) change?
     
 ### Observations:
 
