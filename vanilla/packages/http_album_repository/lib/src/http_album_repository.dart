@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 
 class HttpAlbumRepository implements AlbumRepository {
   Future<List<Album>> getAlbums() async {
-    var response = await http
+    final response = await http
         .get(Uri.parse('https://jsonplaceholder.typicode.com/albums'));
 
     if (response.statusCode == 200) {

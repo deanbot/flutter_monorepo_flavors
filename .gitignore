@@ -1,6 +1,2 @@
 /.idea/
-/packages/**/pubspec.lock
-/packages/**/.packages
-/packages/**/.debug_log
-/packages/**/.idea/
-/packages/**/.dart_tool/
+/gen/

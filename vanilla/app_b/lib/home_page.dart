@@ -1,5 +1,6 @@
 import 'package:app_core/app_core.dart';
 import 'package:flutter/material.dart';
+import 'package:widgets_library/widgets_library.dart';
 
 class HomePage extends StatefulWidget {
   final AlbumRepository albumRepository;
@@ -29,15 +30,8 @@ class _HomePageState extends State<HomePage> {
         future: futureAlbums,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            var items = snapshot.data;
-            return ListView.builder(
-              itemCount: items!.length,
-              itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text(items[index].title),
-                );
-              },
-            );
+            final albums = snapshot.data ?? [];
+            return AlbumsList(albums: albums);
           } else if (snapshot.hasError) {
             return Center(child: Text("${snapshot.error}"));
           }
