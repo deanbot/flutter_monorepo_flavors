@@ -10,11 +10,11 @@ dependencies:
   flutter:
     sdk: flutter
   app_core:
-    path: ../packages/app_core
+    path: ../../packages/app_core
   mock_album_repository:
-    path: ../packages/mock_album_repository
+    path: ../../packages/mock_album_repository
   widgets_library:
-    path: ../packages/widgets_library
+    path: ../../packages/widgets_library
   cupertino_icons: ^1.0.2
 
 dev_dependencies:

@@ -4,7 +4,7 @@ packages:
   app_core:
     dependency: "direct main"
     description:
-      path: "../packages/app_core"
+      path: "../../packages/app_core"
       relative: true
     source: path
     version: "0.0.0"
@@ -50,6 +50,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.15.0"
+  cupertino_icons:
+    dependency: "direct main"
+    description:
+      name: cupertino_icons
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
   equatable:
     dependency: transitive
     description:
@@ -81,27 +88,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  http:
-    dependency: transitive
-    description:
-      name: http
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.13.3"
-  http_album_repository:
-    dependency: "direct main"
-    description:
-      path: "../packages/http_album_repository"
-      relative: true
-    source: path
-    version: "0.0.0"
-  http_parser:
-    dependency: transitive
-    description:
-      name: http_parser
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.0.0"
   lints:
     dependency: transitive
     description:
@@ -123,6 +109,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.4.0"
+  mock_album_repository:
+    dependency: "direct main"
+    description:
+      path: "../../packages/mock_album_repository"
+      relative: true
+    source: path
+    version: "0.0.0"
   path:
     dependency: transitive
     description:
@@ -130,13 +123,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
-  pedantic:
-    dependency: transitive
-    description:
-      name: pedantic
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.11.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -201,7 +187,7 @@ packages:
   widgets_library:
     dependency: "direct main"
     description:
-      path: "../packages/widgets_library"
+      path: "../../packages/widgets_library"
       relative: true
     source: path
     version: "0.0.0"

@@ -1,7 +1,20 @@
 #!/bin/sh
+# run from project root to install flutter deps for library and application packages
 
-cd packages
-cd app_core; flutter pub get; cd ..
-cd http_album_repository; flutter pub get; cd ..
-cd mock_album_repository; flutter pub get; cd ..
-cd widgets_library; flutter pub get; cd ..
+# library packages
+for dir in packages/*/
+do
+  (
+  cd "$dir" || exit
+  flutter pub get
+  )
+done
+
+# app packages
+for dir in apps/*/
+do
+  (
+  cd "$dir" || exit
+  flutter pub get
+  )
+done

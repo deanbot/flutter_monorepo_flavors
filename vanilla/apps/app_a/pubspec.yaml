@@ -8,11 +8,11 @@ dependencies:
   flutter:
     sdk: flutter
   app_core:
-    path: ../packages/app_core
+    path: ../../packages/app_core
   http_album_repository:
-    path: ../packages/http_album_repository
+    path: ../../packages/http_album_repository
   widgets_library:
-    path: ../packages/widgets_library
+    path: ../../packages/widgets_library
 
 dev_dependencies:
   flutter_test:
