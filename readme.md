@@ -1,6 +1,6 @@
 # Monorepo 
 
-See [melos example](./melos]).
+See [melos example](./melos).
 
 ## Setup 
 
