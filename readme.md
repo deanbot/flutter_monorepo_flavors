@@ -23,7 +23,7 @@ packages
 - In library packages `pubspec.lock` should be ignored (per https://dart.dev/tools/pub/glossary#library-package).
 - Packages which consume library packages use a relative path (instead of version name) within `pubspec.yaml`.
 
-`app_a/pubspec.yaml`:
+`apps/app_a/pubspec.yaml`:
 ```yaml
 dependencies:
   app_core:
@@ -47,7 +47,7 @@ dependencies:
     
 ### Observations:
 
-- Api changes in library package are available immediately.
+- Api changes in library package are available immediately. Changes in library packages trigger hot-reloading.
 - Running pub get in all packages is cumbersome. Errors resulting from unmet dependencies may take time to recognize.
     - Simple automation can help, i.e. a shell script executing `flutter pub get` in each library package, see [tool/install.sh](./vanilla/tool/install.sh).
     - Can configure shell script as an Android Studio Run Configuration
