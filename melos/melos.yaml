@@ -5,20 +5,6 @@ packages:
   - apps/**
 
 scripts:
-
-  get:all:
-    run: melos run get:libs && melos run get:apps
-
-  get:libs:
-    run: |
-      melos exec -c 5 -- \
-        dart pub get
-
-  get:apps:
-    run: |
-      melos exec -c 5 -- \
-        dart pub get
-
   lint:all:
     run: melos run analyze && melos run format
     description: Run all static analysis checks
@@ -32,3 +18,10 @@ scripts:
     run: |
       melos exec -c 5 -- \
         dart format .
+
+  build:android:
+    run: |
+      melos exec -c 5 -- \
+        flutter build apk
+    select-package:
+      scope: "app_a*"
