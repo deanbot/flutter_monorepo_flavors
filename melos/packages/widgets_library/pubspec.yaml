@@ -1,0 +1,13 @@
+name: widgets_library
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  app_core:
+    path: ../app_core
+
+#flutter:
+#  uses-material-design: true

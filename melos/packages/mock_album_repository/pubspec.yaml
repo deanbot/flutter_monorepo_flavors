@@ -1,0 +1,8 @@
+name: mock_album_repository
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  app_core:
+    path: ../app_core
