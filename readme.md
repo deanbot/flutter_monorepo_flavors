@@ -23,7 +23,7 @@ root
         └───[...]
 ```
 
-- Shared (library) packages require a directory in `packages`, a `pubspec.yaml`, and a same-named barrel file in `lib`.
+- Shared (library) packages require a directory in `packages`, a `pubspec.yaml`, and a same-named barrel file in `lib`. Private files are placed in `lib/src` by convention (errors are shown when any consumer imports from `src` directly).
 
 example:
 
@@ -34,7 +34,9 @@ packages
     │   [...]
     └───lib
         │   app_core.dart
-        └───[...]
+        │   [...]
+        └───src
+            └───[...]
 ```
     
 - In library packages `pubspec.lock` should be ignored (per https://dart.dev/tools/pub/glossary#library-package).
